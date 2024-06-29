@@ -20,7 +20,7 @@ import * as mv from 'mv';
 import {ncp} from 'ncp';
 import * as path from 'path';
 import * as tmp from 'tmp';
-import {promisify} from 'util';
+import {promisify} from 'node:util';
 
 const mvp = promisify(mv) as {} as (...args: string[]) => Promise<void>;
 const ncpp = promisify(ncp);

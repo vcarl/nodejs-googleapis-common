@@ -11,13 +11,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import * as http2 from 'http2';
-import * as zlib from 'zlib';
-import {URL} from 'url';
+import * as http2 from 'node:http2';
+import * as zlib from 'node:zlib';
+import {URL} from 'node:url';
 import * as qs from 'qs';
 import * as extend from 'extend';
-import {Stream, Readable} from 'stream';
-import * as util from 'util';
+import {Stream, Readable} from 'node:stream';
+import * as util from 'node:util';
 import * as process from 'process';
 import {GaxiosResponse, GaxiosOptions} from 'gaxios';
 import {GaxiosXMLHttpRequest, GaxiosError} from 'gaxios/build/src/common';

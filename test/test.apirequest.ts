@@ -16,7 +16,7 @@ import * as assert from 'assert';
 import {describe, it, afterEach} from 'mocha';
 import * as crypto from 'crypto';
 import * as nock from 'nock';
-import * as stream from 'stream';
+import * as stream from 'node:stream';
 import {URL} from 'url';
 import * as sinon from 'sinon';
 

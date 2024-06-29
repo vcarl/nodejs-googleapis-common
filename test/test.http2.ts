@@ -13,13 +13,13 @@
 // limitations under the License.
 
 import * as assert from 'assert';
-import * as coreHttp2 from 'http2';
+import * as coreHttp2 from 'node:http2';
 import {describe, it, before, beforeEach} from 'mocha';
-import {gzipSync} from 'zlib';
+import {gzipSync} from 'node:zlib';
 import * as proxyquire from 'proxyquire';
 import * as sinon from 'sinon';
-import {Duplex, Readable} from 'stream';
-import {EventEmitter} from 'events';
+import {Duplex, Readable} from 'node:stream';
+import {EventEmitter} from 'node:events';
 import {GaxiosResponse} from 'gaxios';
 import * as http2Types from '../src/http2';
 

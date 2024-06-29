@@ -14,7 +14,7 @@
 import {GaxiosPromise, Headers} from 'gaxios';
 import {DefaultTransporter, OAuth2Client} from 'google-auth-library';
 import * as qs from 'qs';
-import * as stream from 'stream';
+import * as stream from 'node:stream';
 import * as urlTemplate from 'url-template';
 import * as uuid from 'uuid';
 import * as extend from 'extend';

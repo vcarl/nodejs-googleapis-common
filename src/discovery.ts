@@ -15,7 +15,7 @@ import * as fs from 'fs';
 import {Headers} from 'gaxios';
 import {DefaultTransporter} from 'google-auth-library';
 import resolve = require('url');
-import * as util from 'util';
+import * as util from 'node:util';
 
 import {GlobalOptions, ServiceOptions, APIRequestParams} from './api';
 import {createAPIRequest} from './apirequest';
